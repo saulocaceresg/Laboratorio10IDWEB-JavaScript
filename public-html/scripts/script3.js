@@ -1,5 +1,6 @@
 // Contador de números pares e impares. Pide 10 números y muestra cuántos fueron pares y cuántos impares 
 
+document.write(`<h3>Ejercicio 3 - Pares e impares</h3>`)
 // Inicialización de variables y contadores
 let numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8, numero9, numero10, contPares = 0, contImpares = 0; 
 

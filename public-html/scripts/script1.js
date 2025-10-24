@@ -1,6 +1,6 @@
 // Calcular promedio con validación. Pide 5 notas y calcula el promedio, asegurándote de que estén entre 0 y 20
 
-document.writeln(`<h3>Ejercicio 1 - Promedio</h3>`)
+document.write(`<h3>Ejercicio 1 - Promedio</h3>`)
 
 let nota1, nota2, nota3, nota4, nota5, promedio;
 

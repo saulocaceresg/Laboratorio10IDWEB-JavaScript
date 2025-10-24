@@ -4,7 +4,7 @@
 // “Adulto” si entre 18 y 59 
 // “Adulto mayor” si ≥ 60 
 
-document.writeln(`<h3>Ejercicio 2 - Edad</h3>`)
+document.write(`<h3>Ejercicio 2 - Edad</h3>`)
 
 let edad, etapa; // Declaración de vaiables: "edad2 es para la edad, "etapa" es una cadena de texto para imprimir la etapa de desarrollo de la persona según la edad
 
