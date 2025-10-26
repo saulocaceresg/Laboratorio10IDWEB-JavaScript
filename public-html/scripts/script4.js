@@ -6,8 +6,13 @@ document.write(`<h3>Ejercicio 3 - Tabla de multiplicar</h3>`);
 let numero;
 numero = parseInt(prompt("Ingrese un número entero:"));
 
-document.write(`<p></p>`);
+document.write(`<p><b>Tabla de multiplicar</b></p><br>`);
+console.log("Tabla de multiplicar");
+
 for (let i = 1; i <= 12; i++) {
     let producto = numero * i;
-    
+    console.log(numero + " * " + i + " = " + producto);
+    document.write(`${numero} * ${i} = ${producto}<br>`);
 }
+// document.write(`<p></p>`);
+
