@@ -62,7 +62,7 @@ do {
             maximo = parseFloat(cadenaNotas.substring(0, 2));
             minimo = parseFloat(cadenaNotas.substring(0, 2));
             par = parseFloat(cadenaNotas.substring(0, 2));
-            impar = parseFloat(cadenaNotas.substring(0, 2))
+            impar = parseFloat(cadenaNotas.substring(0, 2));
             // Ciclo for para calcular máximo y mínimo al mismo tiempo
             for (let i = 0; i < cadenaNotas.length; i = i + 3) {
                 let notaIndividual = parseFloat(cadenaNotas.substring(i, i + 2)); // Se recoge las notas de la cadena que funciona como arreglo
@@ -96,13 +96,65 @@ do {
 
             break;
         case "b":
+            document.write(`<h4>Contar números pares e impares en un rango</h4>`);
+            console.log(`Contar números pares e impares en un rango`);
+
+            // Declaración de variables
+            let numero1, numero2, contPar = 0, contImpar = 0;
+            // Extremos del intervalo
+            numero1 = parseInt(prompt("Ingrese el extremo inferior del intervalo:"));
+            numero2 = parseInt(prompt("Ingrese el extremo superior del intervalo:"));
+
+            document.write(`<p><b>Números:</b></p>`);
+            let aux;
+            if (numero1 > numero2) { // Condicional para intercambiar los extremos en caso sea el primero mayor que el segundo
+                aux = numero1;
+                numero1 = numero2;
+                numero2 = aux;
+            }
+            console.log("Intervalo: [" + numero1 + ", " + numero2 + "]")
+            document.write(`<p><b>Intervalo:</b> [${numero1}, ${numero2}]</p>`);
+            // Ciclo for para contar los pares e impares
+            for (let i = numero1 + 1; i < numero2; i++) {
+                console.log(i);
+                document.write(i + "<br>");
+                if (i % 2 === 0) {
+                    contPar++;
+                } else {
+                    contImpar++;
+                }
+            }
+
+            // Salida de datos
+            console.log("Cantidad de pares: " + contPar);
+            console.log("Cantidad de impares: " + contImpar);
+            document.write(`<p>Cantidad de pares: ${contPar}<br>Cantidad de impares: ${contImpar}</p>`);
             break;
         case "c":
+            document.write(`<h4>Generar una tabla de multiplicar</h4>`);
+            console.log(`Generar una tabla de multiplicar`);
+
+            // Entrada de datos
+            let numero;
+            numero = parseFloat(prompt("Ingrese un número:"));
+
+            console.log("Número ingresado: " + numero);
+            document.write(`<p>Número ingresado: ${numero}</p>`);
+            
+            // Ciclo for para imprimir la tabla de multiplicar
+            for (let i = 1; i <= 12; i++) {
+                let producto = numero * i;
+                console.log(numero + " * " + i + " = " + producto);
+                document.write(`${numero} * ${i} = ${producto}<br>`);
+            }
             break;
         case "d":
-            alert("SALIENDO DEL PROGRAMA...")
+            alert("SALIENDO DEL PROGRAMA...");
+            document.write(`<p><b>FIN DEL PROGRAMA...</b></p>`);
             break;
         default:
+            // Mensaje en caso de opción no válida
+            alert("OPCIÓN NO VÁLIDA. INGRESE DE NUEVO.")
             break;
     }
 
