@@ -3,6 +3,7 @@
 document.write(`<h3>Ejercicio 6 - Números primos</h3>`);
 
 // Ciclo do-while para que el programa sea iterativo
+let confirmar;
 do {
     let numero;
 
@@ -33,11 +34,12 @@ do {
         }
     }
 
-    let confirmar = prompt("¿Desea ingresar otro número? S/N");
+    confirmar = prompt("¿Desea ingresar otro número? S/N");
     do { // Ciclo do-while para verificar la opción de confirmación
         confirmar = confirmar.toUpperCase();
         if (confirmar != "S" && confirmar != "N") {
             alert("OPCIÓN NO VÁLIDA. INGRESE DE NUEVO.")
+            confirmar = prompt("¿Desea ingresar otro número? S/N");
         }
     } while (confirmar != "S" && confirmar != "N");
 
