@@ -4,7 +4,7 @@
 // - Salir
 // El programa debe repetir hasta que el usuario elija salir.
 
-document.write(`<h3>Ejercicio 7 - Menú de opciones</h3>`);
+document.write(`<h3>Ejercicio 8 - Menú de opciones</h3>`);
 
 let confirmar; // Variable confirmar para que no haya errores en la consola
 // Ciclo do-while para repetir el programa

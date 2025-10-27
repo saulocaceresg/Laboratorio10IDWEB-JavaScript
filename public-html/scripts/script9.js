@@ -2,7 +2,7 @@
 // Un número de n dígitos es Armstrong si la suma de sus dígitos elevados a n da el mismo número
 // Ejemplo: 153 → 1³ + 5³ + 3³ = 153.
 
-document.write(`<h3>Ejercicio 8 - Número Armstrong</h3>`);
+document.write(`<h3>Ejercicio 9 - Número Armstrong</h3>`);
 // Declaración de variables
 let numero, resultado = 0;
 numero = prompt("Ingrese un número:");

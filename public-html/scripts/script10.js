@@ -10,7 +10,7 @@
 //      Salir
 // Debe repetirse hasta que el usuario elija la opción salir
 
-document.write(`<h3>Ejercicio 9 - Menú con múltiples opciones</h3>`);
+document.write(`<h3>Ejercicio 10 - Menú con múltiples opciones</h3>`);
 
 let opcion;
 
